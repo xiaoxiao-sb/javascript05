@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/* js预解析:js会预先将带var定义的变量将声明提升到全局作用域的顶端
+			 * 作用域: 变量的访问区域
+			 * 全局作用域: 在script中的位置就是全局作用域
+			 * 全局变量: 在全局作用域下,定义的变量和方法都是window对象下的属性或者方法
+			 * 
+			 * 全局变量的定义方式:
+			 * 1.带var定义变量的方式:将声明提升到全局作用域的顶端
+			 * 2.不带var定义变量的方式:必须是声明加赋值,否则会报错
+			 * 
+			 * 全局对象:浏览器顶级对象window
+			 * 
+			 * 函数作用域: 在函数体中用var声明的变量,从外界是无法访问的,在函数体内会优先访问
+			 * 可以称为是函数的私有变量,函数作用域中的局部变量.
+			 * 在函数作用域中当访问一个变量时,会先从当前的函数作用域中去寻找有没有用var声明的该
+			 * 变量,如果有就使用,如果没有,会去全局作用域中去寻找
+			 * 在函数作用域中,不带var的变量一定是全局的
+			 * 在函数作用域中,用var定义的变量会将声明提升到函数作用域的顶端
+			 * 
+			 * 用定义函数名方式定义的函数会将声明提升到全局作用域的顶端
+			 * 
+			 */
+//			var a = '哈哈';
+//			console.log(window.a);
+//			var a;
+//			console.log(a);
+//			a = '哈哈';
+			
+//			console.log(a = 5);
+			
+//			if(5>3){
+//				var a = '哈哈';
+//				
+//			}
+//			console.log(a);
+			
+//			for(var i = 0;i<10;i++){
+//				
+//			}
+//			console.log(i);//10
+//			var a = '哈哈';
+//			function sum(){
+//				a = 5;
+//				console.log(a);//5				
+//			}
+//			sum();
+//			console.log(a);//5
+		
+		
+//			var a = '哈哈';
+//			function sum(){
+//				var a = 5;
+//				console.log(a);//5
+//			}
+//			sum();
+//			console.log(a);//哈哈
+
+
+//			var a = '哈哈';
+//			function sum(){
+//				
+//				console.log(a);//undefined
+//				var a = 5;
+//			}
+//			sum();
+//			console.log(a);//哈哈
+
+//			var a = '哈哈';
+//			function sum(a){
+//				// var a;
+//				console.log(a);//undefined
+//				a = 5;
+//			}
+//			sum();
+//			console.log(a);//哈哈
+		
+//			var a = '哈哈';
+//			function sum(a){
+//				//var a = '老刘';
+//				console.log(a);//'老刘'
+//				a = 5;
+//				console.log(a);//5
+//			}
+//			sum('老刘');
+//			console.log(a);//哈哈
+//			console.log(sum1);
+//			function sum1(){
+//				console.log('哈哈');
+//			}
+				
+//			console.log(sum2);
+//			var sum2;
+//			sum2 = function(){
+//				console.log('哈哈');
+//			}
+//			console.log(sum2);
+			//sum2();
+//			console.log(sum1);
+			var sum2;
+			sum2 = 5;
+			 sum2 = function(){
+				console.log('哈哈');
+			}
+			sum2();
+		</script>
+	</body>
+</html>

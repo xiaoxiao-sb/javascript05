@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 实例对象,构造函数和原型对象三者关系:
+			 * 实例对象中的__proto__属性是隐式原型,指向构造函数中的prototype属性是显示原型,
+			 * 原型存储的是一个对象,也可叫原型对象,原型对象中有constructor属性(构造器),指向构造
+			 * 函数,构造函数中有prototype指向原型对象,对象是由构造函数实例化的
+			 */
+			//人类
+			function Person(name,age,gender){
+				this.name = name;
+				this.age = age;
+				this.gender = gender;
+				this.sing = function(){
+					console.log('布拉格广场');
+				}
+				
+			}
+			
+			var jay = new Person('周杰伦',41,true);
+			
+			console.log(jay);
+//			console.log(jay.__proto__);
+			//展开函数的结构
+			console.dir(Person);
+		</script>
+	</body>
+</html>

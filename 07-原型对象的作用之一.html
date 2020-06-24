@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 原型对象:是一个对象,存储在内存中,是一个公共的存储空间,所有的该类型的对象都可以访问
+			 * 这个存储空间,可以把一些公共的代码,放在原型对象中,实现资源共享
+			 */
+			function Marry(name,color){
+				this.name=name;
+				this.color = color;
+//				this.gender = gender;
+//				this.jump = function(){
+//					console.log('踩蘑菇');
+//				}
+			}
+			
+			var xiaohong = new Marry('小红','red');
+			var xiaolv = new Marry('小绿','green');
+			Marry.prototype.jump = function(){
+				alert('踩蘑菇');
+			}
+			Marry.prototype.gender = '男';
+			console.log(xiaohong);
+			console.dir(Marry);
+//			xiaohong.jump();
+			
+			console.log(xiaohong.jump == xiaolv.jump);
+			
+			
+		</script>
+	</body>
+</html>

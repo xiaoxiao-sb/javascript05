@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 简单数据类型:
+			 * 值类型: number string  boolean
+			 * 空类型: undefined null
+			 * 复杂数据类型:
+			 * 引用类型: object
+			 */
+			/*
+			 * 值类型的传递:  var a = 1; 在栈内存中开辟空间保存数值1,var b=a; 在内存中开辟空间
+			 * 将a里面的值,复制一份再赋值给a,此时当b的值改变时,不会影响a
+			 * 
+			 * 引用类型: 由于变量保存的是对象在堆内存中的地址,var jolin = jay; 是将对象堆内存
+			 * 中的地址,拷贝一份赋值给jolin,此时jay和jolin指向的是同一个对象,通过jolin.name改变对象属性的值,再用jay.name访问
+			 * 是改变之后.
+			 */
+			var a = 1;
+			var b = a;
+			b = 2;
+			console.log(a);
+			
+			var jay = new Object();
+			jay.name = '周杰伦';
+			var jolin = jay;
+			jolin.name = '蔡依林';
+			console.log(jay.name);
+		</script>
+	</body>
+
+</html>

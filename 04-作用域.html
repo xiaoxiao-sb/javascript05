@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			//			var sum = '哈哈';
+			//			sum = function(){
+			//				sum = '嘿嘿';
+			//				console.log(sum);
+			//			}
+			//			sum();// '嘿嘿'   
+			//			sum();//  报错      
+
+			//			var sum = '哈哈';
+			//			sum = function(){
+			//				sum = '嘿嘿';
+			//				console.log(sum);
+			//			}
+			//			sum();// '嘿嘿'   
+			//			sum();//  报错    
+			////
+			//			var sum = '哈哈';
+			//			sum = 5;
+			//			var fn = function(){
+			//				sum = '呵呵';
+			//			}
+			//			fn();
+//			var sum = '哈哈';
+//			sum = function() {
+//				sum = '嘿嘿';
+//				//				console.log(sum);
+//			}
+//			console.log(sum); //函数体
+//			sum();
+//			console.log(sum); //嘿嘿
+//			sum();
+
+//			var sum = '哈哈';
+//			sum = function() {
+//				var sum = '嘿嘿';
+//				console.log(sum);
+//			}
+//			sum(); //  '嘿嘿'    '嘿嘿'   '嘿嘿'
+//			sum(); // '嘿嘿'      报错         报错
+			
+			
+			
+//			function sum(sum) {
+//			    sum = '嘿嘿';
+//				console.log(sum);
+//			}
+//			sum(sum); //  嘿嘿     
+//			sum(sum); //  嘿嘿
+
+//			function sum(sum) {
+//				//var sum = sum函数体
+//			    sum = '嘿嘿';
+//				console.log(sum);
+//			}
+//			sum(sum); //  嘿嘿     
+//			sum(sum); //  嘿嘿
+	
+//			function sum() {
+//				//var sum = sum函数体
+//			    sum = '嘿嘿';
+//				console.log(sum);
+//			}
+//			sum(sum); // '嘿嘿'   
+//			sum(sum); //  报错
+//			function sum() {
+//				//var sum = sum函数体
+//			    sum = '嘿嘿';
+//				console.log(sum);
+//			}
+//			sum(); // '嘿嘿'   
+//			sum(); //  报错
+			
+//			function sum(sum) {
+//				// var sum;
+//				console.log(sum);
+//				sum = '嘿嘿';
+//			}
+//			sum(); // undefined
+//			sum(); // undefined
+
+//			function sum(sum) {
+////				//var sum = function fn(){
+////				alert('我是fn函数');
+////			}
+//				console.log(sum);
+//				sum = 5;
+//				
+//			}
+//			function fn(){
+//				alert('我是fn函数');
+//			}
+//			sum(fn); // fn函数体
+//			sum(fn); // fn函数体
+
+
+
+			function sum(a) {
+//				//var a = function fn(){
+//				alert('我是fn函数');
+//			}
+				console.log(sum);  // fn函数体      fn函数体      sum函数体
+				sum = a;
+				console.log(sum);	//  a       sum函数体       fn函数体
+			}
+			
+			function fn(){
+				alert('我是fn函数');
+			}
+			
+			sum(fn);
+			sum(fn);
+			
+		</script>
+	</body>
+
+</html>

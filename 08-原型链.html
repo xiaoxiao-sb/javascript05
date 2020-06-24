@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script type="text/javascript">
+			/*
+			 * 原型链:实例对象在访问属性或方法时,先从自身的构造函数中去寻找,如果有,就使用,
+			 * 如果没有,到自己类型的原型对象中去寻找,如果有就使用,如果没有会到上一层类型的原型
+			 * 对象中去寻找,如果有就是用,如果没有,以此类推继续寻找,直到找到Object的原型对象中,
+			 * 如果有就使用,如果没有就报错.这个寻找使用的过程就是原型链
+			 * 
+			 * instanceof:判断对象是否是某个类型(构造函数)的实例
+			 */
+			
+			function Marry(name, color) {
+				this.name = name;
+				this.color = color;
+//				this.jump = function() {
+//					console.log('构造函数中的跳');
+//				}
+			}
+
+			var xiaohong = new Marry('小红', 'red');
+			var xiaolv = new Marry('小绿', 'green');
+			Marry.prototype.jump = function() {
+				console.log('Marry原型对象中的跳');
+			}
+			
+//			Object.prototype.jump = function(){
+//				console.log('Object原型对象中的跳');
+//			}
+			xiaohong.jump();
+			
+//			console.dir(Object);
+			function Dog(){
+				
+			}
+			
+			console.log(xiaohong instanceof Object);
+		</script>
+	</body>
+
+
+</html>

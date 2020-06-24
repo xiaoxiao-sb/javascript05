@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+//			var obj = new Object();
+//			obj.name = '小明';
+//			obj.age = 50;
+//			obj.gender = true;
+//			obj.study = function(){
+//				console.log('学数学');
+//			}
+//			obj.name = '韩梅梅';
+//			console.log(obj);
+//			obj.study();
+			
+			//人类
+			function Person(name,age,gender){
+				this.name = name;
+				this.age = age;
+				this.gender = gender;
+				this.sing = function(){
+					console.log('布拉格广场');
+				}
+				
+			}
+			
+			var jay = new Person('周杰伦',41,true);
+			console.log(jay.name = '周润发');
+			console.log(jay);
+			jay.sing();
+			var jolin = new Person('蔡依林',38,false);
+			console.log(jolin);
+		</script>
+	</body>
+</html>
